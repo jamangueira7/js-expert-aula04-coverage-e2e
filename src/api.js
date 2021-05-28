@@ -7,6 +7,11 @@ const routes = {
         return response.end();
     },
 
+    '/login:post': (request, response) => {
+        response.write('Logging has succeeded!');
+        return response.end();
+    },
+
     default: (request, response) => {
         response.write('Hello World!');
         return response.end();

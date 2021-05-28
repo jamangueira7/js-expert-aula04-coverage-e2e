@@ -4,7 +4,8 @@
   "description": "<p align=\"center\">\r   <a href=\"#-projeto\">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; \r   <a href=\"#-como-rodar\">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;\r   <a href=\"#-como-contribuir\">Como contribuir</a>&nbsp;&nbsp;&nbsp;\r   </p>\r <br>",
   "main": "index.js",
   "scripts": {
-    "test:cov": "npx nyc npx mocha -w src/*.test.js"
+    "test": "npx mocha -w src/*.test.js",
+    "test:cov": "npx nyc mocha --no-parallel --exit --check-leaks src/*.test.js"
   },
   "keywords": [],
   "author": "",
