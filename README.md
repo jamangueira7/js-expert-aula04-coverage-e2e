@@ -20,7 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Esse projeto é um teste usando spies com dados mockado.
+Esse projeto é um teste usando end-to-end com dados mockado.
 
 ## 🚀 Como Rodar
 

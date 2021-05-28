@@ -1,30 +1,15 @@
-const http = require('http');
+const { describe, it } = require('mocha');
+const request = require('supertest');
+const app = require('./api');
 
-const routes = {
+describe('API Suite test', () => {
+    describe('/contact', () => {
+        it('should request the contact page end return HTTP Status 200', async () => {
+            const response = await request(app)
+                .get('/contact')
+                .expect(200);
 
-    '/contact:get': (request, response) => {
-        response.write('contact us page.');
-        return response.end();
-    },
-
-    default: (request, response) => {
-        response.write('Hello World!');
-        return response.end();
-    }
-};
-
-const header = function (request, response) {
-    const { url, method } = request;
-    const routeKey = `${url}:${method.toLowerCase()}`
-    const chosen = routes[routeKey] || routes.default;
-
-    response.writeHead(200, {
-        'Content-Type': 'text/html'
+            console.log('response', response);
+        });
     });
-
-    return chosen(request, response);
-};
-
-const app = new http.createServer(header).listen(3000, () => console.log('app running at', 3000));
-
-module.exports = app;
+});
