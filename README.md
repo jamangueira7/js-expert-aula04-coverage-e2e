@@ -22,6 +22,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse projeto é um teste usando end-to-end com dados mockado.
 
+<p align="center">
+  <img alt="game" src=".github/test.PNG" width="100%">
+</p>
+
 ## 🚀 Como Rodar
 
 - Clone o projeto.
