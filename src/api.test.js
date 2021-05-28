@@ -27,11 +27,21 @@ describe('API Suite test', () => {
     describe('/login', () => {
         it('should login successfully on the login route and return HTTP Status 200', async () => {
             const response = await request(app)
-                .get('/login')
-                .send({ username: "joao", password: "123456"})
+                .post('/login')
+                .send({ username: "joao", password: "123456" })
                 .expect(200);
 
             assert.deepStrictEqual(response.text, 'Logging has succeeded!');
+        });
+
+        it('should unauthorize when requesting it using wrong credentials and  HTTP Status 401', async () => {
+            const response = await request(app)
+                .post('/login')
+                .send({ username: "joaor", password: "123456" })
+                .expect(401);
+
+            assert.ok(response.unauthorized);
+            assert.deepStrictEqual(response.text, 'Logging failed!');
         });
     });
 });
