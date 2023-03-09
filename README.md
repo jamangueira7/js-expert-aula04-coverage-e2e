@@ -29,7 +29,8 @@ Esse projeto é um teste usando end-to-end com dados mockado.
 - Entre na raiz do projeto.
 - Execute `npm install`.
 - Entre na pasta src.
-- Execute `npm test`
+- Execute `npm test`.
+- Execute `npm run test:cov` para executar a cobertura.
 
 ## 🤔 Como contribuir
 
