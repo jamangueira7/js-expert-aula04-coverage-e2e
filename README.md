@@ -11,8 +11,6 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Yarn](https://yarnpkg.com/) - 1.22.4
 - [Npm](https://www.npmjs.com/) - 6.14.5
@@ -22,17 +20,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse projeto é um teste usando end-to-end com dados mockado.
 
-<p align="center">
-  <img alt="game" src=".github/test.PNG" width="100%">
-</p>
+![test.PNG](.github%2Ftest.PNG)
+![img.png](.github%2Fimg.png)
 
 ## 🚀 Como Rodar
 
 - Clone o projeto.
 - Entre na raiz do projeto.
-- Execute "npm install".
+- Execute `npm install`.
 - Entre na pasta src.
-- Execute 'node service.test.js'
+- Execute `npm test`
 
 ## 🤔 Como contribuir
 
